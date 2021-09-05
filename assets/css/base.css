@@ -1,0 +1,112 @@
+:root{
+    --text-color:#222;
+    --orange-color:#f65e39;
+
+    
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+
+.grid{
+    width: 1300px;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.grid__column-full{
+    width: 100%;
+}
+
+.grid__column-2{
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid__column-3{
+    width: 33.33333%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid__column-4{
+    width: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid__column-5{
+    width: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.btns-move{
+    position: relative;
+
+}
+
+
+.btn-move{
+    position: absolute;
+    z-index: 1;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none; 
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+}
+
+.btn-move-icon{
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.btn-move-left{
+    top: 50%;
+    left: 4px;
+    transform: translate(-50% , -50%);
+    background-color: rgba(255,255,255,0.6);
+
+
+}
+
+.btn-move-right{
+    top: 50%;
+    right: 4px;
+    transform: translate(50% , -50%);
+    background-color: #fff;
+}
+
+.btn-move-right-icon{
+    color: var(--text-color);
+}
+
+.content-container-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-more{
+    font-size: 1.5rem;
+    color: var(--orange-color);
+    text-decoration: navajowhite;
+}
